@@ -14,6 +14,10 @@
 		64A5A3BB28F1054500900DF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64A5A3BA28F1054500900DF5 /* GoogleService-Info.plist */; };
 		64A5A3BE28F129C900900DF5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 64A5A3BD28F129C900900DF5 /* FirebaseAuth */; };
 		64A5A3C028F129C900900DF5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 64A5A3BF28F129C900900DF5 /* FirebaseFirestore */; };
+		64A5A3C228F1323600900DF5 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A3C128F1323600900DF5 /* ListView.swift */; };
+		64A5A3C428F137E000900DF5 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A3C328F137E000900DF5 /* Dog.swift */; };
+		64A5A3C628F13F9E00900DF5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A3C528F13F9E00900DF5 /* DataManager.swift */; };
+		64A5A3C828F142BC00900DF5 /* NewDogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A3C728F142BC00900DF5 /* NewDogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		64A5A3A328F1011200900DF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64A5A3A628F1011200900DF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64A5A3BA28F1054500900DF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		64A5A3C128F1323600900DF5 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		64A5A3C328F137E000900DF5 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		64A5A3C528F13F9E00900DF5 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		64A5A3C728F142BC00900DF5 /* NewDogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				64A5A3BA28F1054500900DF5 /* GoogleService-Info.plist */,
 				64A5A39F28F1011100900DF5 /* JacketStashApp.swift */,
 				64A5A3A128F1011100900DF5 /* ContentView.swift */,
+				64A5A3C128F1323600900DF5 /* ListView.swift */,
+				64A5A3C728F142BC00900DF5 /* NewDogView.swift */,
+				64A5A3C328F137E000900DF5 /* Dog.swift */,
+				64A5A3C528F13F9E00900DF5 /* DataManager.swift */,
 				64A5A3A328F1011200900DF5 /* Assets.xcassets */,
 				64A5A3A528F1011200900DF5 /* Preview Content */,
 			);
@@ -152,8 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64A5A3C828F142BC00900DF5 /* NewDogView.swift in Sources */,
 				64A5A3A228F1011100900DF5 /* ContentView.swift in Sources */,
+				64A5A3C628F13F9E00900DF5 /* DataManager.swift in Sources */,
 				64A5A3A028F1011100900DF5 /* JacketStashApp.swift in Sources */,
+				64A5A3C428F137E000900DF5 /* Dog.swift in Sources */,
+				64A5A3C228F1323600900DF5 /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

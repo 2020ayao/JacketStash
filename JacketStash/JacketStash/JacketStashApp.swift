@@ -11,6 +11,8 @@ import Firebase
 @main
 struct JacketStash: App {
   // register app delegate for Firebase setup
+    
+    @StateObject var dataManager = DataManager()
   
     init() {
         FirebaseApp.configure()
@@ -18,7 +20,8 @@ struct JacketStash: App {
 
   var body: some Scene {
     WindowGroup {
-        ContentView()
+        ListView()
+            .environmentObject(dataManager)
     }
   }
 }
