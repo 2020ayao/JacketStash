@@ -11,10 +11,12 @@ import Firebase
 struct ContentView: View {
     @State private var email = ""
     @State private var password = ""
-    @State private var userIsLoggedIn = false
+    @State public var userIsLoggedIn = false
+    @StateObject var dataManager = DataManager()
     var body: some View {
         if userIsLoggedIn {
             ListView()
+                .environmentObject(dataManager)
         }
         else{
             content
@@ -26,16 +28,17 @@ struct ContentView: View {
         {
             Color.black
             
-            RoundedRectangle(cornerRadius: 30, style: .continuous).foregroundStyle(.linearGradient(colors: [.pink, .red], startPoint: .topLeading, endPoint: .bottomTrailing))
-                .frame(width: 1000, height: 400)
-                .rotationEffect(.degrees(135))
-                .offset(y:-350)
+            RoundedRectangle(cornerRadius: 30, style: .continuous).foregroundStyle(.linearGradient(colors: [.red,.indigo], startPoint: .topLeading, endPoint: .bottomTrailing))
+                //.frame(width: 1000, height: 400)
+//                .rotationEffect(.degrees(135))
+//                .offset(y:-350)
+                .edgesIgnoringSafeArea(.all)
             
             VStack(spacing: 20){
-                Text("Welcome")
+                Text("JacketStash")
                     .foregroundColor(.white)
                     .font(.system(size: 40, weight: .bold, design: .rounded))
-                    .offset(x:-100, y:-100)
+                    .offset(x:-60, y:-100)
                 
                 TextField("Email", text:$email)
                     .foregroundColor(.white)
@@ -69,7 +72,7 @@ struct ContentView: View {
                         .bold()
                         .frame(width:200, height: 40)
                         .background(
-                            RoundedRectangle(cornerRadius: 10, style:.continuous).fill(.linearGradient(colors: [.pink, .red], startPoint: .top, endPoint: .bottomTrailing))
+                            RoundedRectangle(cornerRadius: 10, style:.continuous).fill(.linearGradient(colors: [.blue,.teal], startPoint: .top, endPoint: .bottomTrailing))
                         )
                         .foregroundColor(.white)
                 }

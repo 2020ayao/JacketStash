@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ListView: View {
     @EnvironmentObject var dataManager: DataManager
@@ -26,7 +27,19 @@ struct ListView: View {
             .sheet(isPresented: $showPopup) {
                 NewDogView()
             }
+            
         }
+        Button{
+            logout()
+        } label: {
+            Text("Logout")
+                .bold()
+                .foregroundColor(.black)
+        }
+    }
+    
+    func logout() {
+        try! Auth.auth().signOut()
     }
 }
 
