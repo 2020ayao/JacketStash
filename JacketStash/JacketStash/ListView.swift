@@ -11,10 +11,12 @@ import Firebase
 struct ListView: View {
     @EnvironmentObject var dataManager: DataManager
     @State private var showPopup = false
+    @State private var colorScheme = 1
     
     
     var body: some View {
-        NavigationView {
+        
+        NavigationStack {
             List(dataManager.dogs, id: \.id) { dog in
                 Text(dog.breed)
             }
@@ -29,12 +31,15 @@ struct ListView: View {
             }
             
         }
-        Button{
-            logout()
-        } label: {
-            Text("Logout")
-                .bold()
-                .foregroundColor(.black)
+        
+        HStack{
+            Button{
+                //QR View
+            } label: {
+                Text("Scan me")
+                    .bold()
+                    .foregroundColor(.black)
+            }
         }
     }
     

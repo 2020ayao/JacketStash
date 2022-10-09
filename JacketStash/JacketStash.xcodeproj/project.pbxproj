@@ -18,6 +18,9 @@
 		64A5A3C428F137E000900DF5 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A3C328F137E000900DF5 /* Dog.swift */; };
 		64A5A3C628F13F9E00900DF5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A3C528F13F9E00900DF5 /* DataManager.swift */; };
 		64A5A3C828F142BC00900DF5 /* NewDogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A3C728F142BC00900DF5 /* NewDogView.swift */; };
+		64A5A3CA28F210CD00900DF5 /* QRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A3C928F210CD00900DF5 /* QRView.swift */; };
+		64A5A3CC28F23D5D00900DF5 /* CheckInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A3CB28F23D5D00900DF5 /* CheckInView.swift */; };
+		64A5A3CE28F23DCC00900DF5 /* CheckOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A5A3CD28F23DCC00900DF5 /* CheckOutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		64A5A3C328F137E000900DF5 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		64A5A3C528F13F9E00900DF5 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		64A5A3C728F142BC00900DF5 /* NewDogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDogView.swift; sourceTree = "<group>"; };
+		64A5A3C928F210CD00900DF5 /* QRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRView.swift; sourceTree = "<group>"; };
+		64A5A3CB28F23D5D00900DF5 /* CheckInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInView.swift; sourceTree = "<group>"; };
+		64A5A3CD28F23DCC00900DF5 /* CheckOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,9 @@
 				64A5A39F28F1011100900DF5 /* JacketStashApp.swift */,
 				64A5A3A128F1011100900DF5 /* ContentView.swift */,
 				64A5A3C128F1323600900DF5 /* ListView.swift */,
+				64A5A3C928F210CD00900DF5 /* QRView.swift */,
+				64A5A3CD28F23DCC00900DF5 /* CheckOutView.swift */,
+				64A5A3CB28F23D5D00900DF5 /* CheckInView.swift */,
 				64A5A3C728F142BC00900DF5 /* NewDogView.swift */,
 				64A5A3C328F137E000900DF5 /* Dog.swift */,
 				64A5A3C528F13F9E00900DF5 /* DataManager.swift */,
@@ -165,11 +174,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				64A5A3C828F142BC00900DF5 /* NewDogView.swift in Sources */,
+				64A5A3CE28F23DCC00900DF5 /* CheckOutView.swift in Sources */,
 				64A5A3A228F1011100900DF5 /* ContentView.swift in Sources */,
 				64A5A3C628F13F9E00900DF5 /* DataManager.swift in Sources */,
 				64A5A3A028F1011100900DF5 /* JacketStashApp.swift in Sources */,
+				64A5A3CC28F23D5D00900DF5 /* CheckInView.swift in Sources */,
 				64A5A3C428F137E000900DF5 /* Dog.swift in Sources */,
 				64A5A3C228F1323600900DF5 /* ListView.swift in Sources */,
+				64A5A3CA28F210CD00900DF5 /* QRView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

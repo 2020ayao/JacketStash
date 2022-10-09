@@ -15,8 +15,9 @@ struct ContentView: View {
     @StateObject var dataManager = DataManager()
     var body: some View {
         if userIsLoggedIn {
-            ListView()
-                .environmentObject(dataManager)
+//            ListView()
+//                .environmentObject(dataManager)
+            QRView()
         }
         else{
             content
