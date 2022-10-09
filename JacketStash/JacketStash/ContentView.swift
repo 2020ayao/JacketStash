@@ -41,18 +41,41 @@ struct ContentView: View {
     @State var password = ""
     @State var displayName = ""
     @State public var userIsLoggedIn = false
+    //@Binding var userIsLoggedIn: Bool
     @StateObject var dataManager = DataManager()
     
     private var loginStatusMessage = ""
     var body: some View {
+        
         if userIsLoggedIn {
-            //            ListView()
-            //                .environmentObject(dataManager)
+            //HomeView(isLoggedIn: userIsLoggedIn)
             HomeView()
         }
         else{
             content
         }
+//        NavigationStack {
+//            if userIsLoggedIn {
+//                //            ListView()
+//                //                .environmentObject(dataManager)
+//                NavigationLink(destination: HomeView(isLoggedIn: userIsLoggedIn)) {
+//                    Text("Let's get started")
+//                }
+//                //NavigationLink("HomeView", destination: HomeView(isLoggedIn: userIsLoggedIn))
+//            }
+//            else{
+//                content
+//            }
+//        }
+        
+        //        if userIsLoggedIn {
+        //            //            ListView()
+        //            //                .environmentObject(dataManager)
+        //            HomeView()
+        //        }
+        //        else{
+        //            content
+        //        }
     }
     
     var content : some View {

@@ -24,6 +24,7 @@ struct JacketStash: App {
   var body: some Scene {
     WindowGroup {
         let _ = print("App Launching")
+        //ContentView(userIsLoggedIn: .constant(false))
         ContentView()
     }
   }

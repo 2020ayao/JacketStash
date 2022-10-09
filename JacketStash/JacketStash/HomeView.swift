@@ -20,6 +20,8 @@ struct HomeView: View {
     @State var CheckIn = false
     @State var CheckOut = false
     
+    @State var isLoggedIn: Bool = false
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 5, style: .continuous).foregroundStyle(.linearGradient(colors: [.red,.indigo], startPoint: .topLeading, endPoint: .bottomTrailing))
@@ -28,7 +30,7 @@ struct HomeView: View {
                 .offset(y:-350)
                 .edgesIgnoringSafeArea(.all)
             VStack{
-                Text("Hi, Adam")
+                Text("Hi, \(retrieveName())")
                     .font(.system(size: 30, weight: .bold, design: .rounded))
                     .foregroundColor(.white)
                     .offset(x:-100, y:100)
@@ -76,7 +78,32 @@ struct HomeView: View {
     }
     func logout() {
         try! Auth.auth().signOut()
+        print("user is logged out")
     }
+    
+    func retrieveName() -> String {
+//        let user = Auth.auth().currentUser
+//        if let user = user {
+////            if let displayName = user.displayName {
+////                return displayName
+//            print(user.email)
+//            return user.displayName ?? "default"
+//            }
+//          // The user's ID, unique to the Firebase project.
+//          // Do NOT use this value to authenticate with your backend server,
+//          // if you have one. Use getTokenWithCompletion:completion: instead.
+//          return ""
+        
+        if Auth.auth().currentUser != nil {
+            if let name = Auth.auth().currentUser!.displayName{
+                return name
+            }
+        } else {
+          return "default"
+        }
+        return "default"
+        }
+    
 }
 
 struct HomeView_Previews: PreviewProvider {
