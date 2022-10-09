@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct CheckInView: View {
+    @EnvironmentObject var dataManager: DataManager
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Let's get started...")
+            .font(.system(size: 30, weight: .bold, design: .rounded))
+            .foregroundColor(.black)
+            .offset(x:-50, y:-300)
+        
+        
+       // UIImage()
+        // QR CODE IMAGE
+        
     }
 }
 

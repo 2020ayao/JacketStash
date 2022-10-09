@@ -1,5 +1,5 @@
 //
-//  QRView.swift
+//  HomeView.swift
 //  JacketStash
 //
 //  Created by Adam Yao on 10/8/22.
@@ -9,12 +9,12 @@
 
 // Checkout button should be held for 5 seconds to confirm(chipotle)
 // Implement back button for new Views
-// 
+//
 
 import SwiftUI
 import Firebase
 
-struct QRView: View {
+struct HomeView: View {
     
     @State private var name = ""
     @State var CheckIn = false
@@ -30,13 +30,14 @@ struct QRView: View {
             VStack{
                 Text("Hi, Adam")
                     .font(.system(size: 30, weight: .bold, design: .rounded))
+                    .foregroundColor(.white)
                     .offset(x:-100, y:100)
                 HStack{
                     Button {
                         self.CheckIn.toggle()
                     } label: {
                         Text("Check in")
-                            .foregroundColor(.black)
+                            .foregroundColor(.white)
                             .padding(10)
                             .background(Color.indigo)
                             .cornerRadius(10)
@@ -49,7 +50,7 @@ struct QRView: View {
                         self.CheckOut.toggle()
                     } label: {
                         Text("Check out")
-                            .foregroundColor(.black)
+                            .foregroundColor(.white)
                             .padding(10)
                             .background(Color.indigo)
                             .cornerRadius(10)
@@ -78,8 +79,8 @@ struct QRView: View {
     }
 }
 
-struct QRView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        QRView()
+        HomeView()
     }
 }

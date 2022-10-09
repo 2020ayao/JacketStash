@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Assets.xcassets">
+   </FileRef>
+   <FileRef
+      location = "group:CheckInView.swift">
+   </FileRef>
+   <FileRef
+      location = "group:CheckOutView.swift">
+   </FileRef>
+   <FileRef
+      location = "group:ContentView.swift">
+   </FileRef>
+   <FileRef
+      location = "group:DataManager.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Dog.swift">
+   </FileRef>
+   <FileRef
+      location = "group:GoogleService-Info.plist">
+   </FileRef>
+   <FileRef
+      location = "group:HomeView.swift">
+   </FileRef>
+   <FileRef
+      location = "group:JacketStashApp.swift">
+   </FileRef>
+   <FileRef
+      location = "group:ListView.swift">
+   </FileRef>
+   <FileRef
+      location = "group:NewDogView.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Preview Content">
+   </FileRef>
+   <FileRef
+      location = "group:User.swift">
+   </FileRef>
+</Workspace>
